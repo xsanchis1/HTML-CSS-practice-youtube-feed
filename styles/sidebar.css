@@ -1,0 +1,75 @@
+div.sidebar {
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 100px;
+    background-color: white;
+}
+
+div.sidebar-link {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+div.sidebar-link button {
+    height:100%;
+    width: 100%;
+    border-width: 0;
+    background-color: white;
+    transition: background-color 0.15s;
+}
+
+div.sidebar-link button:hover {
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+
+img.home-icon {
+    height: 30px;
+    width: 30px;
+}
+
+img.explore-icon {
+    height: 45px;
+    width: 45px;
+    padding-left: 3px;
+}
+
+img.subscription-icon {
+    height: 40px;
+    width: 40px;
+    padding-left: 3px;
+}
+
+img.originals-icon {
+    height: 35px;
+    width: 35px;
+    padding-left: 3px;
+}
+
+img.yt-music-icon {
+    height: 35px;
+    width: 35px;
+}
+
+img.library-icon {
+    height: 35px;
+    width: 35px;
+}
+
+div.icon-text {
+    margin-top: -30px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 10px;
+}

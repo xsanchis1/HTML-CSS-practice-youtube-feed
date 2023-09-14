@@ -1,0 +1,269 @@
+
+div.header {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(236, 236, 236);
+    z-index: 1;
+}
+
+div.left-section {
+    display: flex;
+    align-items: center;
+}
+
+img.hamburger-icon{
+    width: 35px;
+    height: 24px;
+}
+
+.hamburger-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 40px;
+    margin-left: 27px;
+    margin-right: 50px;
+    border: solid;
+    border-width: 0;
+    background-color: white;
+    border-radius: 30px;
+    transition: background-color 0.15s;
+    position: relative;
+}
+
+.hamburger-button:hover {
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+
+img.youtube-icon {
+    width: 30px;
+    margin-top: 3px;
+}
+
+button.youtube-button{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-width: 0;
+    border-radius: 30px;
+    background-color: white;
+    transition: background-color 0.15s;
+}
+
+button.youtube-button:hover {
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+}
+
+
+div.middle-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 90px;
+    margin-right:30px;
+    max-width: 700px;
+}
+
+input.search-bar {
+    flex: 1;
+    border: solid;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    border-radius: 22px;
+    height: 40px;
+    width: 30; 
+    color: rgba(0, 0, 0, 0.6); 
+    font-size: 15px;
+    padding-left: 15px;
+    font-family: Roboto, Arial;
+
+}
+
+img.search-icon {
+    height: 20px;
+}
+
+button.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    width: 60px;
+    margin-left: -60px;
+    border-style: solid;
+    border-width: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: rgb(192, 192, 192);
+    background-color: rgb(239, 239, 239);
+    transition: backround-color 0.15s;
+    position: relative;
+}
+
+div.search-tooltip, 
+div.micro-tooltip,
+div.camera-tooltip,
+div.bell-tooltip,
+div.hamburger-tooltip {
+    white-space: nowrap;
+    position: absolute;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.1s;
+    pointer-events: none;
+    z-index: 200;
+}
+
+button.search-button:hover {
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+}
+
+button.search-button:hover div.search-tooltip,
+button.micro-button:hover div.micro-tooltip,
+button.camera-button:hover div.camera-tooltip,
+button.bell-button:hover div.bell-tooltip,
+button.hamburger-button:hover div.hamburger-tooltip {
+    opacity: 1;
+}
+
+img.micro-icon {
+    height: 20px;
+}
+
+button.micro-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-left: 7px;
+    border-width: 0px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    transition: background-color 0.15s;
+    position: relative;
+}
+
+button.micro-button:hover {
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+}
+
+
+div.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-right: 27px;
+    flex-shrink: 0;
+}
+
+img.camera-icon {
+    width: 24px;
+    height: 24px;
+}
+
+button.camera-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border-width: 0;
+    transition: background-color 0.15s;
+    position: relative;
+}
+
+button.camera-button:hover {
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+}
+
+div.notification-icon-container {
+    position: relative;
+}
+
+div.notification-count {
+    position:absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+img.bell-icon {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    margin-top: 3px;
+}
+
+button.bell-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: white;
+    transition: background-color 0.15s;
+    position: relative;
+}
+
+button.bell-button:hover {
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+}
+
+
+img.channel-icon {
+    height: 32px;
+    width:32px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-left: -6px;
+    margin-top: -3px;
+}
+
+button.channel-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border-width: 0;
+}
+
+button.channel-button:hover {
+    cursor: pointer;
+}
+
+
